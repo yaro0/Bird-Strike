@@ -5,7 +5,7 @@ using UnityEngine;
 public class BirdManager : MonoBehaviour
 {
     public float timeUntilNextBird;
-    public Transform positionNextBird;
+    public Vector3 positionNextBird;
     public GameObject birdPrefab;
 
     // Start is called before the first frame update
@@ -17,10 +17,15 @@ public class BirdManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // timeUntilNextBird = Random(3, 15);
+        timeUntilNextBird = Random.Range(3, 15);
+        positionNextBird = new Vector3(Random.Range(-20f, -16f), Random.Range(-5f, 5f), 0f);
         if(timeUntilNextBird == 0)
         {
-            //Instantiate(birdPrefab, positionNextBird, Quaternion.identity);
+            Instantiate(birdPrefab, positionNextBird, this.transform.rotation);
+        }
+        else
+        {
+            timeUntilNextBird -= Time.deltaTime;
         }
     }
 }
