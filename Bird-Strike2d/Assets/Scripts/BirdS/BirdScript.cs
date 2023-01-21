@@ -19,4 +19,8 @@ public class BirdScript : MonoBehaviour
         transform.localScale +=  new Vector3(0.0006f, 0.0002f, 0);
         
     }
+    void OnMouseDown()
+    {
+        Destroy(gameObject);
+    }
 }

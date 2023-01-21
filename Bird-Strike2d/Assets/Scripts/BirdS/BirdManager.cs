@@ -11,21 +11,24 @@ public class BirdManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeUntilNextBird = Random.Range(3, 5);
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeUntilNextBird = Random.Range(3, 15);
-        positionNextBird = new Vector3(Random.Range(-20f, -16f), Random.Range(-5f, 5f), 0f);
-        if(timeUntilNextBird == 0)
+        if(timeUntilNextBird > 0)
         {
-            Instantiate(birdPrefab, positionNextBird, this.transform.rotation);
-        }
-        else
-        {
-            timeUntilNextBird -= Time.deltaTime;
-        }
+            timeUntilNextBird-=Time.deltaTime;
+        }else NewBird();
+        
+
     }
+    void NewBird()
+    {
+        positionNextBird = new Vector3(Random.Range(-20f, -16f), Random.Range(-5f, 5f), 0f);
+        Instantiate(birdPrefab, positionNextBird, this.transform.rotation);
+        timeUntilNextBird = Random.Range(3, 5);
+    }
+    
 }
