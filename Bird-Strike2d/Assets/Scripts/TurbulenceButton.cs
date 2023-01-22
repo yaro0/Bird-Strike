@@ -51,7 +51,7 @@ public class TurbulenceButton : MonoBehaviour
     {
         audioSource.Play();
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         
         button.enabled = true;
 
