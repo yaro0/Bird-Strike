@@ -39,13 +39,13 @@ public class BirdManager : MonoBehaviour
         if(leftOrRIght == 1)
         {
 
-            positionNextBird = new Vector3(Random.Range(-20f, -16f), Random.Range(-5f, 5f), 0f);
+            positionNextBird = new Vector3(Random.Range(-20f, -16f), Random.Range(1f, 3f), 0f);
             Instantiate(birdPrefab, positionNextBird, this.transform.rotation);
             
         }
         if(leftOrRIght == 2)
         {
-            positionNextBird = new Vector3(Random.Range(20f, 16f), Random.Range(-5f, 5f), 0f);
+            positionNextBird = new Vector3(Random.Range(20f, 16f), Random.Range(1f, 3f), 0f);
             Instantiate(birdPrefab, positionNextBird, this.transform.rotation);
             
         }

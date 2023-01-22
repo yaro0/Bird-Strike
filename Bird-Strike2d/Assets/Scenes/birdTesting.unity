@@ -123,63 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &670987203
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4840635384669152521, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_Name
-      value: Bird1 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.16094
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.4456902
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.029089574
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
 --- !u!1001 &766936769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213,15 +156,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -429,4 +372,3 @@ MonoBehaviour:
   timeUntilNextBird: 0
   positionNextBird: {x: 0, y: 0, z: 0}
   birdPrefab: {fileID: 4840635384669152521, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-  birdHasDied: 0
