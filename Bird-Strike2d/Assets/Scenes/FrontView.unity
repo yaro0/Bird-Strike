@@ -1233,6 +1233,7 @@ MonoBehaviour:
   gameStats: {fileID: 11400000, guid: f5834b75023a4af4b8ac4ff370cbfca4, type: 2}
   callText: {fileID: 1739984502}
   exclamationMark: {fileID: 1994550783}
+  exclamationMark: {fileID: 0}
   callButton: {fileID: 367293190}
   redButton: {fileID: 1689828976}
   purpleButton: {fileID: 1741975032}
@@ -4795,7 +4796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4840635384669152521, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_RootOrder
