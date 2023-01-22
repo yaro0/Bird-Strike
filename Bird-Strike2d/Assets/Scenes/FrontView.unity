@@ -1079,6 +1079,7 @@ MonoBehaviour:
   camShake: {fileID: 398360090}
   gameStats: {fileID: 11400000, guid: f5834b75023a4af4b8ac4ff370cbfca4, type: 2}
   callText: {fileID: 1739984502}
+  exclamationMark: {fileID: 0}
   callButton: {fileID: 367293190}
   redButton: {fileID: 0}
   purpleButton: {fileID: 0}
