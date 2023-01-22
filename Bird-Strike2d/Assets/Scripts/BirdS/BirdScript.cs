@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirdScript : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class BirdScript : MonoBehaviour
     public int leftOrRight;
     public Sprite crashedBird;
     public bool birdCrashed=false;
-    
+    private float oneSecondwait = 1f;
     private SpriteRenderer sp;
     // Start is called before the first frame update
     void Start()
@@ -37,8 +38,13 @@ public class BirdScript : MonoBehaviour
         if (transform.localScale.x > 4f || transform.localScale.x<-4f)
         {
             birdCrash();
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            
+            
+            if (oneSecondwait > 0)
+            {
+                oneSecondwait -= Time.deltaTime;
+
+            }else SceneManager.LoadScene(1);
         }
         
     }
