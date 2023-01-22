@@ -46,8 +46,9 @@ Animation:
   m_GameObject: {fileID: 4840635384669152521}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 87750dde1269f254ba2b013958e62167, type: 2}
-  m_Animations: []
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -164,7 +165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 1.92, y: 1.08}
   m_EdgeRadius: 0
 --- !u!50 &4840635384669152527
 Rigidbody2D:

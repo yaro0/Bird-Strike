@@ -265,6 +265,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird1
       objectReference: {fileID: 0}
+    - target: {fileID: 4840635384669152522, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840635384669152522, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840635384669152522, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840635384669152522, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840635384669152522, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4840635384669152526, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_RootOrder
       value: 2
