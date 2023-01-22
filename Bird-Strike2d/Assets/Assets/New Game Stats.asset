@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: New Game Stats
   m_EditorClassIdentifier: 
   turbAnnouced: 0
-  turbulenceOngoing: 1
+  turbulenceOngoing: 0
   callAnswered: 0
   healthLeft: 3
