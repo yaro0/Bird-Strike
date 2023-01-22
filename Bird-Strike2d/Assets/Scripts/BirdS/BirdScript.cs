@@ -34,7 +34,7 @@ public class BirdScript : MonoBehaviour
     {
         if (!birdCrashed)
         {
-            transform.localScale += new Vector3(Mathf.Sign(transform.localScale.x) * 0.001f, Mathf.Sign(transform.localScale.y) * 0.001f, 0);
+            transform.localScale += new Vector3(Mathf.Sign(transform.localScale.x) * 0.0015f, Mathf.Sign(transform.localScale.y) * 0.0015f, 0);
         }
        
         if (transform.localScale.x > 4f || transform.localScale.x<-4f)

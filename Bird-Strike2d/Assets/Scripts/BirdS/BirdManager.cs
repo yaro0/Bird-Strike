@@ -51,7 +51,7 @@ public class BirdManager : MonoBehaviour
         }
         
         //Instantiate(birdPrefab, positionNextBird, this.transform.rotation);
-        timeUntilNextBird = Random.Range(3, 5);
+        timeUntilNextBird = Random.Range(10, 15);
     }
 
     
