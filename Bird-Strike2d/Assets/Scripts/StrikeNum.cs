@@ -22,7 +22,7 @@ public class StrikeNum : MonoBehaviour
                 oneSecondwait -= Time.deltaTime;
 
             }
-            else SceneManager.LoadScene(1);
+            else SceneManager.LoadScene(2);
         }
     }
 }
