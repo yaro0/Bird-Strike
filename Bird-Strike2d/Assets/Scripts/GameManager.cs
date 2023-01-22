@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public Button purpleButton;
     public Button blueButton;
     public Button greenButton;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -63,8 +63,10 @@ public class GameManager : MonoBehaviour
     public IEnumerator StartTurbulence()
     {
         eventOngoing = true;
+
         
         StartCoroutine(camShake.shakeCamera(30));
+        print("here");
         yield return new WaitForSeconds(25);
 
         if (gameStats.turbAnnouced == false && gameStats.healthLeft > 0)
@@ -103,23 +105,28 @@ public class GameManager : MonoBehaviour
     {
         int callEventPicker = Random.Range(0, 5);
         gameStats.callAnswered = true;
+
         switch (callEventPicker)
         {
             case 1:
                 callText.text = "Press red button";
                 redButton.onClick.AddListener(rightButtonPressed);
+                
                 break;
             case 2:
                 callText.text = "Press blue button";
                 blueButton.onClick.AddListener(rightButtonPressed);
+                
                 break;
             case 3:
                 callText.text = "Press green button";
                 greenButton.onClick.AddListener(rightButtonPressed);
+                
                 break;
             case 4:
                 callText.text = "Press purple button";
                 purpleButton.onClick.AddListener(rightButtonPressed);
+                
                 break;
             default:
                 break;
@@ -140,12 +147,17 @@ public class GameManager : MonoBehaviour
         gameStats.rightButtonPressed = false;
         timeUntilNextEvent = Random.Range(5f, 10f);
 
+        redButton.onClick.RemoveAllListeners();
+        blueButton.onClick.RemoveAllListeners();
+        greenButton.onClick.RemoveAllListeners();
+        purpleButton.onClick.RemoveAllListeners();
     }
 
     void rightButtonPressed()
     {
         exclamationMark.SetActive(false);
         gameStats.rightButtonPressed = true;
+
     }
 
 

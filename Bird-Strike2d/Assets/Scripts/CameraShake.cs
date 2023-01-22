@@ -14,7 +14,7 @@ public class CameraShake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeElapsed += Time.deltaTime;
+        //timeElapsed += Time.deltaTime;
     }
 
     void Start()
@@ -30,6 +30,7 @@ public class CameraShake : MonoBehaviour
 
         while (timeElapsed < durationShake)
         {
+            timeElapsed += Time.deltaTime;
             float strenght = curve.Evaluate(timeElapsed/durationShake);
             camera.transform.position = position.camPos + Random.insideUnitSphere * strenght;
             yield return null;
