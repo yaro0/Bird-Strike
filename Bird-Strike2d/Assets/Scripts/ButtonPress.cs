@@ -9,6 +9,8 @@ public class ButtonPress : MonoBehaviour
     public GameObject leftUI;
     public GameObject frontUI;
     public GameObject rightUI;
+    public Positions positions;
+
 
     public void interact(string text)
     {
@@ -25,6 +27,7 @@ public class ButtonPress : MonoBehaviour
     public void goToleft()
     {
         camera.transform.position = new Vector3(-30, camera.transform.position.y, -10);
+        positions.camPos = new Vector3(-30, camera.transform.position.y, -10);
         frontUI.SetActive(false); 
         leftUI.SetActive(true); 
 
@@ -33,6 +36,7 @@ public class ButtonPress : MonoBehaviour
     public void goToRight()
     {
         camera.transform.position = new Vector3(30, camera.transform.position.y, -10);
+        positions.camPos = new Vector3(30, camera.transform.position.y, -10);
         frontUI.SetActive(false);
         rightUI.SetActive(true);
     }
@@ -40,6 +44,7 @@ public class ButtonPress : MonoBehaviour
     public void goToFront()
     {
         camera.transform.position = new Vector3(0, 0, -10);
+        positions.camPos = new Vector3(0, 0, -10);
         frontUI.SetActive(true);
         leftUI.SetActive(false);
         rightUI.SetActive(false);

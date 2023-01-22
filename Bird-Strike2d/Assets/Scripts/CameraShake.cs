@@ -8,6 +8,7 @@ public class CameraShake : MonoBehaviour
     
     public AnimationCurve curve;
     public GameObject camera;
+    public Positions position;
     private float timeElapsed = 0;
     
     // Update is called once per frame
@@ -30,8 +31,9 @@ public class CameraShake : MonoBehaviour
         while (timeElapsed < durationShake)
         {
             float strenght = curve.Evaluate(timeElapsed/durationShake);
-            camera.transform.position = originalPosition + Random.insideUnitSphere * strenght;
+            camera.transform.position = position.camPos + Random.insideUnitSphere * strenght;
             yield return null;
+
         }
 
         camera.transform.position = originalPosition;
