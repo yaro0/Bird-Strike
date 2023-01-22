@@ -143,6 +143,7 @@ MonoBehaviour:
   leftOrRight: 0
   crashedBird: {fileID: 21300000, guid: acb73f3370c4f8b48b421d351da2c8f7, type: 3}
   birdCrashed: 0
+  particles: {fileID: 7937338753336838912, guid: abd97aa3bd0c7a84c8a135088810d4d4, type: 3}
 --- !u!61 &4840635384669152522
 BoxCollider2D:
   m_ObjectHideFlags: 0

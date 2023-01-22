@@ -11,6 +11,7 @@ public class BirdScript : MonoBehaviour
     public int leftOrRight;
     public Sprite crashedBird;
     public bool birdCrashed=false;
+    public GameObject particles;
     private float oneSecondwait = 1f;
     private SpriteRenderer sp;
     // Start is called before the first frame update
@@ -59,7 +60,10 @@ public class BirdScript : MonoBehaviour
     {
         if (!birdCrashed)
         {
+            Instantiate(particles, transform.position, transform.rotation);
             Destroy(gameObject);
+            
+
         }
     }
 

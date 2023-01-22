@@ -187,10 +187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4840635384669152512, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
-      propertyPath: birdManager
-      value: 
-      objectReference: {fileID: 1776258001}
     - target: {fileID: 4840635384669152521, guid: f77b697d69c7b6244b36ada0508fba9d, type: 3}
       propertyPath: m_Name
       value: Bird1 (1)
