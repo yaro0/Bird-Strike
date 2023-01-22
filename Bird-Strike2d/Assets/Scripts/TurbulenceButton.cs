@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurbulenceButton : MonoBehaviour
 {
 
     [SerializeField] private GameStats gameStats;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Button button;
+    //[SerializeField] TextMeshPro text; 
 
     // Start is called before the first frame update
     void Start()
@@ -21,17 +24,26 @@ public class TurbulenceButton : MonoBehaviour
         {
 
         }
+
+
     }
 
     public void announceTurb()
     {
-
+        if (gameStats.turbulenceOngoing && !gameStats.turbAnnouced) { 
+        button.enabled = false;
         StartCoroutine(playAnnoucement());
 
-        if (!gameStats.turbAnnouced) {
+        if (!gameStats.turbAnnouced)
+        {
             gameStats.turbAnnouced = true;
         }
 
+        
+    } else {
+    print("no turbulence");
+
+    }
 
     }
 
@@ -40,6 +52,8 @@ public class TurbulenceButton : MonoBehaviour
         audioSource.Play();
 
         yield return new WaitForSeconds(3);
+        
+        button.enabled = true;
 
     }
 }

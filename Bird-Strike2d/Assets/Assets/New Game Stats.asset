@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4561b6a9f8e520844b09aa16a3a84a3b, type: 3}
   m_Name: New Game Stats
   m_EditorClassIdentifier: 
-  turbAnnouced: 0
+  turbAnnouced: 1
+  turbulenceOngoing: 0
   callAnswered: 0
-  healthLeft: 0
+  healthLeft: 3

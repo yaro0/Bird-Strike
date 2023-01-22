@@ -18,7 +18,7 @@ public class CameraShake : MonoBehaviour
 
     void Start()
     {
-       StartCoroutine(shakeCamera(30));
+       
     }
 
     public IEnumerator shakeCamera(float duration)

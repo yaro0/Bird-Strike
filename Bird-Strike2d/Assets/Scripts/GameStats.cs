@@ -6,7 +6,9 @@ using UnityEngine;
 public class GameStats : ScriptableObject
 {
     [SerializeField] public bool turbAnnouced;
+    [SerializeField] public bool turbulenceOngoing;
     [SerializeField] public bool callAnswered;
     [SerializeField] public int healthLeft;
+
 
 }
