@@ -27,7 +27,8 @@ public class BirdManager : MonoBehaviour
     }
     void NewBird()
     {
-        int leftOrRIght=Random.Range(1,2);
+        int leftOrRIght=Random.Range(1,3);
+        Debug.Log("leftOrRIght=" + leftOrRIght);
         if(leftOrRIght == 1)
         {
 

@@ -11,11 +11,11 @@ public class BirdScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (transform.position.x<0)
+        if (transform.position.x<0f)
         {
             rb.velocity = transform.right * speed;
         }
-        if(transform.position.x>0)
+        if(transform.position.x>0f)
         {
             rb.velocity = transform.right*-1 * speed;
             transform.localScale = new Vector3(-1, 1, 1);
@@ -26,7 +26,7 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale +=  new Vector3(0.0006f, 0.0002f, 0);
+        transform.localScale +=  new Vector3(Mathf.Sign(transform.localScale.x)*0.006f, Mathf.Sign(transform.localScale.y)*0.002f, 0);
         
     }
     void OnMouseDown()
