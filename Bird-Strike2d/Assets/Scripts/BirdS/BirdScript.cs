@@ -32,10 +32,7 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!birdCrashed)
-        {
-            transform.localScale += new Vector3(Mathf.Sign(transform.localScale.x) * 0.0015f, Mathf.Sign(transform.localScale.y) * 0.0015f, 0);
-        }
+        
        
         if (transform.localScale.x > 4f || transform.localScale.x<-4f)
         {
@@ -44,6 +41,13 @@ public class BirdScript : MonoBehaviour
             Cursor.visible = false;
         }
         
+    }
+    void FixedUpdate()
+    {
+        if (!birdCrashed)
+        {
+            transform.localScale += new Vector3(Mathf.Sign(transform.localScale.x) * 0.009f, Mathf.Sign(transform.localScale.y) * 0.009f, 0);
+        }
     }
     void OnMouseDown()
     {
