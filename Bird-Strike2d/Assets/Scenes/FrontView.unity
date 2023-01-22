@@ -562,6 +562,7 @@ MonoBehaviour:
   leftUI: {fileID: 2029600365}
   frontUI: {fileID: 984870567}
   rightUI: {fileID: 0}
+  positions: {fileID: 11400000, guid: 6a00117ffb27e4a4280456ef53301103, type: 2}
 --- !u!1 &308558441
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +790,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   camera: {fileID: 519420028}
+  position: {fileID: 11400000, guid: 6a00117ffb27e4a4280456ef53301103, type: 2}
 --- !u!4 &398360091
 Transform:
   m_ObjectHideFlags: 0
@@ -1412,6 +1414,7 @@ MonoBehaviour:
   leftUI: {fileID: 2029600365}
   frontUI: {fileID: 984870567}
   rightUI: {fileID: 1008899850}
+  positions: {fileID: 11400000, guid: 6a00117ffb27e4a4280456ef53301103, type: 2}
 --- !u!1 &984870567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,7 +1659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1675,7 +1678,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: d775c408a7620a14dae00ed6cda4387c, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: cce173bd45bee5343818736dbed4e90b, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: cce173bd45bee5343818736dbed4e90b, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: daa7cec4f6542fe4fa38cdeaf224bfb1, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: cce173bd45bee5343818736dbed4e90b, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1794,6 +1797,7 @@ MonoBehaviour:
   leftUI: {fileID: 2029600365}
   frontUI: {fileID: 984870567}
   rightUI: {fileID: 1008899850}
+  positions: {fileID: 11400000, guid: 6a00117ffb27e4a4280456ef53301103, type: 2}
 --- !u!114 &1161823067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,6 +2587,7 @@ MonoBehaviour:
   leftUI: {fileID: 2029600365}
   frontUI: {fileID: 984870567}
   rightUI: {fileID: 1008899850}
+  positions: {fileID: 11400000, guid: 6a00117ffb27e4a4280456ef53301103, type: 2}
 --- !u!114 &1618407592
 MonoBehaviour:
   m_ObjectHideFlags: 0
