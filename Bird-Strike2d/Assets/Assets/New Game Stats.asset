@@ -15,4 +15,6 @@ MonoBehaviour:
   turbAnnouced: 0
   turbulenceOngoing: 0
   callAnswered: 0
+  callOngoing: 0
+  rightButtonPressed: 0
   healthLeft: 3

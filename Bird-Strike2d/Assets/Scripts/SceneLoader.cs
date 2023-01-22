@@ -15,6 +15,7 @@ public class SceneLoader : MonoBehaviour
         gamestats.turbAnnouced = false;
         gamestats.turbulenceOngoing = false;
         gamestats.callAnswered = false;
+        gamestats.callOngoing = false;
 
     }
 
