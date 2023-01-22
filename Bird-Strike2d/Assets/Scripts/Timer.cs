@@ -23,9 +23,13 @@ public class Timer : MonoBehaviour
         {
             currentSecondfloat -= Time.deltaTime;
             currentSecond = (int)currentSecondfloat;
-            time.text = currentSecond.ToString(); 
+            time.text = currentSecond.ToString();
 
         }
-        else print("Timer has reacherd zero");
+        else
+        {
+            print("Timer has reacherd zero");
+            currentSecondfloat = maxTime;
+        }
     }
 }
