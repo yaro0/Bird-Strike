@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(eventOngoing);
+        //print(eventOngoing);
         if (timeUntilNextEvent > 0)
         {
             timeUntilNextEvent -= Time.deltaTime;
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator StartTurbulence()
     {
         eventOngoing = true;
-        gameStats.turbAnnouced = false;
+        
         StartCoroutine(camShake.shakeCamera(30));
         yield return new WaitForSeconds(25);
 
@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour
         eventOngoing = false;
         gameStats.turbulenceOngoing = false;
         timeUntilNextEvent = Random.Range(5f, 10f);
+        gameStats.turbAnnouced = false;
+
     }
 
     void StartCall()

@@ -9,12 +9,13 @@ public class TurbulenceButton : MonoBehaviour
     [SerializeField] private GameStats gameStats;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Button button;
+    [SerializeField] private GameObject noTurbMessage;
     //[SerializeField] TextMeshPro text; 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        noTurbMessage.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,19 +42,30 @@ public class TurbulenceButton : MonoBehaviour
 
         
     } else {
-    print("no turbulence");
 
+            StartCoroutine(noTurb());
     }
 
     }
 
     public IEnumerator playAnnoucement()
     {
+        noTurbMessage.SetActive(false);
         audioSource.Play();
 
         yield return new WaitForSeconds(5);
         
         button.enabled = true;
+
+    }
+
+    public IEnumerator noTurb()
+    {
+        noTurbMessage.SetActive(true);
+
+        yield return new WaitForSeconds(3);
+        print("here");
+        noTurbMessage.SetActive(false);
 
     }
 }
