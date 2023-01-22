@@ -50,13 +50,14 @@ public class TurbulenceButton : MonoBehaviour
 
     public IEnumerator playAnnoucement()
     {
+        GetComponent<Button>().interactable = false;
         noTurbMessage.SetActive(false);
         audioSource.Play();
 
         yield return new WaitForSeconds(5);
         
         button.enabled = true;
-
+        GetComponent<Button>().interactable = true;
     }
 
     public IEnumerator noTurb()
