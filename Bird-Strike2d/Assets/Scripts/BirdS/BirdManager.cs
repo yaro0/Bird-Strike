@@ -13,7 +13,7 @@ public class BirdManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeUntilNextBird = Random.Range(3, 5);
+        timeUntilNextBird = Random.Range(10, 15);
         
     }
 
