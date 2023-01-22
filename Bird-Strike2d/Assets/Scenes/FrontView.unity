@@ -1233,7 +1233,6 @@ MonoBehaviour:
   gameStats: {fileID: 11400000, guid: f5834b75023a4af4b8ac4ff370cbfca4, type: 2}
   callText: {fileID: 1739984502}
   exclamationMark: {fileID: 1994550783}
-  exclamationMark: {fileID: 0}
   callButton: {fileID: 367293190}
   redButton: {fileID: 1689828976}
   purpleButton: {fileID: 1741975032}
@@ -4860,7 +4859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2142912043
 MonoBehaviour:
   m_ObjectHideFlags: 0
