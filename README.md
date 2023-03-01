@@ -21,7 +21,10 @@ We were able to complete the game during the hackaton. However, since we complet
 The game was made using C# and Unity.
 
 ## Screenshot
-
+![Screenshot 2023-01-22 105959](https://user-images.githubusercontent.com/93663497/222031630-9acbfcab-2520-4551-a4cd-d4cfc89113f1.png)
+![howToPlayBirdStrike](https://user-images.githubusercontent.com/93663497/222031659-b929ab97-c9e6-42b1-99ac-0b70eb1bb513.png)
+![Screenshot 2023-01-22 105818](https://user-images.githubusercontent.com/93663497/222031681-a720b1f3-eec6-4c74-85b5-a65eb6dab22c.png)
+![Screenshot_20230122_105956](https://user-images.githubusercontent.com/93663497/222031788-e1e84934-6b86-4e7c-aa10-c6f187497c1e.png)
 
 ## How to play
 We are currently not hosting the game anywhere to play online but you can download the excecutable file and run it from your device.
